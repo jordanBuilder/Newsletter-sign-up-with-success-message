@@ -1,0 +1,180 @@
+@font-face {
+    font-family: myFont;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: myFont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.card
+{
+    display: flex;
+    width: 800px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    
+}
+
+.left
+{
+    width: 55%;
+}
+
+.right
+{
+   width: 45%; 
+}
+.right img 
+{
+    width: 100%;
+}
+
+ul
+{
+  list-style-image: url(./assets/images/icon-list.svg);  
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+ 
+label
+{
+    margin-bottom: 10px;
+}
+input
+{
+    padding: 10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;    
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+input:focus
+{
+    border: 1px solid black;
+}
+
+.wrong
+{
+    border-color: red;
+    background-color: rgba(255, 150, 150, 1);
+    color: rgb(240, 10, 10);
+    opacity: 0.5;
+}
+
+button
+{
+    font-family: inherit;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: hsl(235, 18%, 26%);
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0px 4px 20px hsl(4, 100%, 67%);
+    transition: 200ms ease;  
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+.hide
+{
+    display: none;
+}
+
+.card-2
+{   
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    
+    
+}
+.card-2  h1{
+    font-size: 40px;
+}
+
+.card-2 button{
+    width: 100%;
+}
+
+@media (max-width: 768px)
+{
+    .card {
+        flex-direction: column-reverse;
+        width: 95%;
+        padding: 0;
+    }
+
+    body
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .card h1
+    {
+        font-size: 30px;
+    }
+
+    .left
+    {
+    width: 100%;
+    padding: 20px;
+    
+    }
+
+    .right
+    {
+    width: 100%; 
+    }
+    .right img
+    {
+        content: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
+    form
+    {
+       width: 90%;
+    }
+
+    .card-2
+    {
+        min-height: 100vh;
+    }
+
+    .dismiss
+    {
+        margin-top: 19em;
+    }
+
+}
